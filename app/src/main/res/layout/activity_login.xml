@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/login_linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/login_name_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名称" />
+        <EditText
+            android:id="@+id/login_UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/login_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户密码" />
+        <EditText
+            android:id="@+id/login_textPasswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/phone_linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/phone_name_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机" />
+        <EditText
+            android:id="@+id/login_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+            <requestFocus />
+        </EditText>
+        <TextView
+            android:id="@+id/login_phoneResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/login_textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="校验码" />
+        <EditText
+            android:id="@+id/login_authcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+        <Button
+            android:id="@+id/login_btnauth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="校验" />
+        <TextView
+            android:id="@+id/login_codeResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_linearLayout4">
+        <Button
+            android:id="@+id/login_btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录"
+           />
+        <Button
+            android:id="@+id/login_btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            />
+        <TextView
+            android:id="@+id/login_RegResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+</LinearLayout>

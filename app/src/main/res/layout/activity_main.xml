@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" >
+    </com.baidu.mapapi.map.MapView>
+
+    <!--上面的界面-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/backcolor_white_drawable"
+        >
+    <!--上面的界面-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+
+        >
+
+        <!-- 用户信息 btn -->
+        <Button
+            android:id="@+id/UserInfoButton"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/userinfobtnpic"
+         />
+        <!-- 聊天功能键 btn android:layout_alignParentRight="true"-->
+        <Button
+            android:id="@+id/ChatFunctionButton"
+            android:layout_width="30dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/globalchatbtnpic"
+            android:layout_centerVertical="true"
+          />
+
+        <!-- 搜索 edit EditText-->
+        <AutoCompleteTextView
+            android:id="@+id/SearchEidtTxt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignBottom="@+id/UserInfoButton"
+            android:layout_toRightOf="@id/UserInfoButton"
+            android:layout_toLeftOf="@id/ChatFunctionButton"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/searchedit"
+            />
+    </RelativeLayout>
+    </RelativeLayout>
+
+
+    <!--下面的界面-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/backcolor_white_drawable"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:id="@+id/BottomRelativeLayout"
+        >
+
+        <!-- 发送声音信息 btn -->
+        <Button
+            android:id="@+id/SendVoiceMsgActionButton"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/sendvoicemsgactionbtnpic"
+            />
+        <!-- 发送文本信息 btn -->
+        <Button
+            android:id="@+id/SendMsgActionButton"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sendmsgactionbtnpic"
+            android:layout_alignBottom="@+id/SendVoiceMsgActionButton"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+        <!-- 编辑文本信息 edit -->
+        <EditText
+            android:id="@+id/SendMessageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/SendVoiceMsgActionButton"
+            android:layout_toRightOf="@id/SendVoiceMsgActionButton"
+            android:layout_toLeftOf="@id/SendMsgActionButton"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/sendmsgedit"
+            android:layout_centerVertical="true"
+            />
+
+
+        <!-- 发送信息按钮 -->
+        <!--Button
+            android:id="@+id//"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_below="@+id/SendMessageEditText"
+            android:layout_centerHorizontal="true" /-->
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <!--LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="80dip"
+
+        android:minWidth="100dip"
+        android:orientation="vertical"
+        android:padding="2dp" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dip" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="定位icon" >
+
+            <RadioButton
+                android:id="@+id/defaulticon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="默认图标" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/customicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义图标" >
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout-->
+
+</RelativeLayout>

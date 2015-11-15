@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\StarChat2_改版之前0913\StarChat2\Autobahn\res"/><source path="E:\StarChat2_改版之前0913\StarChat2\Autobahn\build\generated\res\rs\release"/><source path="E:\StarChat2_改版之前0913\StarChat2\Autobahn\build\generated\res\generated\release"/></dataSet><dataSet config="release"><source path="E:\StarChat2_改版之前0913\StarChat2\Autobahn\src\release\res"/></dataSet><mergedItems/></merger>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backcolor_white_drawable"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginBottom="50dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/login2_RelaLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/login2_logo"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/logo"
+                >
+                </ImageView>
+            <TextView
+                android:id="@+id/login2_ch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中文（中国）"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:layout_below="@+id/login2_logo"
+                android:layout_centerHorizontal="true"
+                />
+
+            <EditText
+                android:id="@+id/login2_userid"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:hint="用户名"
+                android:singleLine="true"
+                android:background="@drawable/edittext_white"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/login2_ch"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                >
+            <requestFocus/>
+            </EditText>
+            <EditText
+                android:id="@+id/login2_password"
+                android:layout_below="@+id/login2_userid"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:singleLine="true"
+                android:background="@drawable/edittext_white"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:inputType="textPassword"
+                android:hint="密码"
+                android:layout_weight="1"
+                >
+            </EditText>
+            <Button
+                android:id="@+id/login2_btnLogin"
+                android:layout_below="@+id/login2_password"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/backcolor_grey_drawable"
+                android:text="登录"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/login2_textview_needhelp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:text="需要帮助？"
+                android:textSize="15dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/login2_textview_resgister"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_above="@+id/login2_textview_needhelp"
+                android:layout_marginBottom="10dp"
+                android:text="注册"
+                android:textSize="15dp"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

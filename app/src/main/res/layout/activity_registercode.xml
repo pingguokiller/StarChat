@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backcolor_white_drawable"
+    >
+
+    <RelativeLayout
+        android:id="@+id/registercode_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/backcolor_black_drawable"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight ="10dp"
+            >
+            <TextView
+                android:id="@+id/registercode_title_titlename"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:text="校验码"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                />
+            <RelativeLayout
+                android:id="@+id/registercode_relalaout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/registercode_title_titlename"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                >
+                <ImageView
+                    android:id="@+id/registercode_icon_back"
+                    android:layout_width="12dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/whiteleftarrow"
+                    android:layout_centerVertical="true"
+                    />
+                </RelativeLayout>
+
+            <TextView
+                android:id="@+id/registercode_title_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/registercode_relalaout"
+                android:layout_alignBottom="@+id/registercode_title_titlename"
+                android:text="返回"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                />
+            <TextView
+                android:id="@+id/registercode_title_over"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/registercode_title_titlename"
+                android:text="完成"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/registercode_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="请输入校验码"
+                android:textColor="@color/wordtip"
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <EditText
+                android:id="@+id/registercode_code"
+                android:layout_below="@+id/registercode_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="40dp"
+                android:hint="校验码"
+                android:singleLine="true"
+                android:background="@drawable/edittext_white"
+                android:digits="0123456789"
+                >
+            <requestFocus/>
+            </EditText>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

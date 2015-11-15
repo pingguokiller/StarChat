@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <TextView android:id="@+id/updatesex_listitem_name"
+            android:layout_centerVertical = "true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/usermenu_item_nameheight"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            />
+        />
+        <ImageView android:id="@+id/updatesex_listitem_select"
+            android:layout_centerVertical = "true"
+            android:layout_width="@dimen/usermenu_item_tipheight"
+            android:layout_height="@dimen/usermenu_item_tipheight"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>

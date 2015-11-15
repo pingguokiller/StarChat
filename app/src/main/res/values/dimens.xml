@@ -1,0 +1,20 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">10dp</dimen>
+    <dimen name="slidingmenu_offset">100dp</dimen>
+    <dimen name="usermenu_item_height">40dp</dimen>
+    <dimen name="usermenu_item_iconheight">30dp</dimen>
+    <dimen name="usermenu_item_nameheight">20dp</dimen>
+    <dimen name="usermenu_item_tipheight">10dp</dimen>
+    <dimen name="usermenu_headicon_rad">90dp</dimen>
+
+    <dimen name="selfinfo_item_height">40dp</dimen>
+
+    <dimen name="selfinfo_item0_height">80dp</dimen>
+    <dimen name="selfinfo_item0_viewcontent_height">60dp</dimen>
+
+    <dimen name="guidepage_dot_size">10dp</dimen>
+</resources>
